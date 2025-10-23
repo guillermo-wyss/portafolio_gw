@@ -1,0 +1,24 @@
+
+/* ===== Tema ===== */
+:root{
+  --brand-500:#0d6efd;
+  --brand-600:#0b5ed7;
+  --accent-500:#108700;
+  --bg-hero-grad: linear-gradient(135deg, var(--brand-500) 0%, #6610f2 100%);
+}
+/* Navbar */
+.navbar .logo{height:32px;width:auto;image-rendering:auto;}
+.brand-text{font-weight:700;letter-spacing:.3px;}
+/* Botón marca */
+.btn-brand{background:var(--brand-500);color:#fff;border:none;}
+.btn-brand:hover{background:var(--brand-600);color:#fff;}
+/* Hero */
+.bg-hero{background:var(--bg-hero-grad);color:#fff;}
+.animate-title{animation:fadeUp .8s ease both;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+/* Cards */
+.card-hover{transition:transform .2s ease, box-shadow .2s ease;}
+.card-hover:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.12)}
+/* Utilidades */
+.shadow-soft{box-shadow:0 10px 25px rgba(0,0,0,.08),0 2px 8px rgba(0,0,0,.05);}
+.txt-gradient{background:linear-gradient(90deg,#fff 0%, #dff 50%, #fff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;}
